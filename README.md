@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.png" alt="Mohamed Arafa - Portfolio Banner" width="100%" />
+  <img src="https://github.com/mo74x/mo74x/blob/main/mohamed_arafa_banner_1784137576158.png" alt="Mohamed Arafa - Portfolio Banner" width="100%" />
 </p>
 
 <h1 align="center">Hi, I'm Mohamed Arafa 👋</h1>
