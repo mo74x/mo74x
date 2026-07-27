@@ -1,7 +1,5 @@
-
-
 <h1 align="center">Hi, I'm Mohamed Arafa 👋</h1>
-<h3 align="center">Backend Software Engineer | Event-Driven Systems & Distributed Architecture</h3>
+<h3 align="center">Backend Software Engineer | Event-Driven Systems, Financial Engines & Distributed Architecture</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/mohamed-arafa-6628211b8/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
@@ -10,7 +8,7 @@
 
 <p align="center">
   <b>Building scalable, high-concurrency backend systems with Node.js, NestJS & TypeScript, complemented by modern interfaces in React & Next.js.</b><br>
-  Specializing in event-driven microservices pipelines, multi-tenant isolation, real-time telemetry, and high-performance caching strategies.
+  Specializing in event-driven microservices pipelines, deterministic matching engines, event sourcing, real-time telemetry, and cloud-native Kubernetes orchestration.
 </p>
 
 ---
@@ -20,14 +18,25 @@
 | Category | Technologies |
 | :--- | :--- |
 | **Languages & Core** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white) |
-| **Frontend & UI** | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) |
-| **Messaging & Real-Time** | ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white) ![gRPC](https://img.shields.io/badge/gRPC-4285F4?style=flat-square&logo=googlecloud&logoColor=white) ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white) ![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socket.io&logoColor=white) |
-| **Databases & Caching** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) ![TypeORM](https://img.shields.io/badge/TypeORM-FE0902?style=flat-square&logo=typeorm&logoColor=white) |
-| **DevOps & Infrastructure** | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![k6](https://img.shields.io/badge/k6-7D64FF?style=flat-square&logo=k6&logoColor=white) |
+| **Messaging & Real-Time** | ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white) ![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socket.io&logoColor=white) ![gRPC](https://img.shields.io/badge/gRPC-4285F4?style=flat-square&logo=googlecloud&logoColor=white) ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white) |
+| **Databases & Event Sourcing** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) ![TypeORM](https://img.shields.io/badge/TypeORM-FE0902?style=flat-square&logo=typeorm&logoColor=white) |
+| **Observability & DevOps** | ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) |
+| **Frontend & UI** | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) |
 
 ---
 
 ### 🚀 Featured Projects
+
+#### ⚡ [Matchbook](https://github.com/mo74x/matchbook) — Real-Time Event-Sourced Order Matching Engine
+> High-throughput financial matching engine featuring Price-Time Priority (FIFO) execution, append-only event store crash recovery, full Prometheus/Grafana telemetry, and automated CI SLA performance gates.
+
+*   **Deterministic Engine:** Implemented a synchronous Price-Time Priority (FIFO) matching algorithm supporting `LIMIT`, `MARKET`, `IOC`, and `FOK` order types with sub-millisecond execution times and L2 depth aggregation (**18,700+ ops/sec throughput**).
+*   **Event Sourcing & Crash Recovery:** Designed an append-only event store (`OrderEvent`) backed by PostgreSQL 15, coupled with automated `OrderBookSnapshot` state checkpoints enabling zero-data-loss crash recovery.
+*   **Multi-Market Isolation & Circuit Breakers:** Created per-instrument task queues (`MarketProcessor`) with automated circuit breakers that halt trading on persistence failures, preventing memory/database state divergence.
+*   **Observability & Cloud-Native Deployment:** Built custom Prometheus OpenMetrics (`prom-client`), auto-provisioned Grafana dashboards, `AsyncLocalStorage` request correlation ID tracking, and production Kubernetes manifests & Helm v3 charts with Horizontal Pod Autoscaling (HPA).
+*   **CI SLA Gate:** Configured GitHub Actions CI pipeline with automated SLA performance verification (`p95 <= 500ms`, `throughput >= 5,000 ops/sec`).
+
+---
 
 #### 🌐 [Nexora](https://github.com/mo74x/Nexora) — Multi-Tenant Event Ingestion & Analytics Platform
 > A high-performance 3-service microservices platform built to ingest, throttle, and analyze per-tenant events in real-time.
@@ -68,9 +77,10 @@
 
 ### 🛡️ Engineering Philosophy & System Design Values
 
+*   **Deterministic & Event-Sourced Architecture:** Decoupling execution logic from I/O boundaries, using append-only event logs for auditability, replayability, and deterministic state recovery.
 *   **Zero-Trust Multi-Tenancy:** Ensuring absolute tenant data isolation at the routing, service, and database levels (e.g. strict JWT claim parsing and schema boundaries).
-*   **ACID & Transactional Integrity:** Designing strict ledger schemas (e.g. append-only ledgers) and protecting resources using Redis-based distributed locks.
-*   **Performance as a First-Class Citizen:** Constantly benchmarking services with k6, identifying database bottlenecks, and tuning indexing/caching patterns.
+*   **Observability & Metric-Driven Engineering:** Treating latency percentiles (p50, p95, p99), metric exposition (Prometheus/Grafana), and log correlation (`x-request-id`) as first-class citizens.
+*   **Performance & SLA Enforcement:** Constantly benchmarking under load, identifying database bottlenecks, and enforcing SLA performance gates in CI/CD pipelines.
 
 ---
 
