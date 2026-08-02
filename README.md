@@ -48,6 +48,18 @@
 
 ---
 
+#### 🚚 [FleetPulse](https://github.com/mo74x/Fleetpulse) — Production-Grade Last-Mile Delivery Engine
+> A polyglot-persistent, event-driven logistics platform handling the full delivery lifecycle — from order ingestion and geo-spatial courier dispatch, through real-time GPS tracking, to double-entry financial settlement.
+
+*   **Polyglot Persistence:** Architected a multi-database system using **MongoDB** (order documents), **PostgreSQL** (double-entry financial ledger), **Redis** (GeoSets, distributed locks, BullMQ queues), and **Elasticsearch** (fuzzy waybill search) — each selected for its optimal use case.
+*   **Concurrency-Safe Dispatch:** Implemented a geo-spatial courier matching engine using **Redis GeoSets** (`GEOSEARCH`) with **Redlock** distributed locking to prevent race conditions during concurrent order assignment.
+*   **Double-Entry Ledger:** Built an ACID-compliant COD (Cash-on-Delivery) settlement engine using **TypeORM** pessimistic write locks (`SELECT FOR UPDATE`) to guarantee financial consistency across courier, merchant, and platform accounts.
+*   **Async Order Pipeline:** Designed a resilient order ingestion pipeline via **BullMQ** with exponential backoff retries, decoupled from **RabbitMQ** event-driven consumers (`order.delivered`) triggering downstream financial processing.
+*   **Real-Time Telemetry:** Established **Socket.IO** WebSocket connections on a `/telemetry` namespace for continuous driver GPS coordinate ingestion, stored in Redis GeoSets for proximity queries.
+*   **Observability & Hardening:** Integrated **@nestjs/terminus** health checks (Postgres, MongoDB, Redis, Elasticsearch), global **@nestjs/throttler** rate limiting (100 req/min), JWT + RBAC authentication, and a **GitHub Actions** CI pipeline with automated lint, build, and test gates.
+
+---
+
 #### 💼 Caliber Talent Network — Event-Driven Recruitment Platform
 > An asynchronous recruitment pipeline designed to handle document processing and user management under strict tenant-isolation policies.
 
