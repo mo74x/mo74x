@@ -1,74 +1,144 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg">
-  <img alt="Mohamed Arafa, backend and systems integration engineer" src="./assets/banner-light.svg" width="100%">
-</picture>
+<div align="center">
+
+# Mohamed Arafa
+### Backend & Systems Integration Engineer
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=10B981&center=true&vCenter=true&width=750&lines=High-Concurrency+Backend+Architecture+%7C+Node.js+%26+NestJS;Financial+Ledgers%2C+Idempotency+%26+Enterprise+Integrations;Event-Driven+Microservices+%7C+Kafka%2C+RabbitMQ+%26+BullMQ;Deterministic+Matching+Engines+%26+Distributed+Systems" alt="Typing SVG" />
+</a>
 
 <br/>
 
-[LinkedIn](https://www.linkedin.com/in/mohamed-arafa-6628211b8/) | [Email](mailto:mohamed3rafa01@gmail.com) | [npm](https://www.npmjs.com/package/agentic-json-repair)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mohamed_Arafa-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohamed-arafa-6628211b8/)
+[![Email](https://img.shields.io/badge/Email-mohamed3rafa01%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:mohamed3rafa01@gmail.com)
+[![npm](https://img.shields.io/badge/npm-agentic--json--repair-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/agentic-json-repair)
+![Profile Views](https://komarev.com/ghpvc/?username=mo74x&label=Views&color=10B981&style=flat-square)
 
-## About
+</div>
 
-I build backend systems where money and data have to stay correct: ledgers, payment and ERP integrations, and the event-driven plumbing between them.
+---
 
-My work is mostly Node.js, NestJS and TypeScript, and it keeps returning to the same hard problems: double-entry ledger integrity, effectively exactly-once webhook processing, deterministic execution, and fair multi-tenant rate limiting.
+### ⚡ About Me
 
-## Selected work
+I design and build **fault-tolerant, high-throughput backend systems and financial integrations** using **Node.js, NestJS, and TypeScript**. My work focuses on the hardest boundaries of distributed systems: **double-entry ledger integrity, effective exactly-once webhook processing, deterministic execution, and multi-tenant rate limiting**.
 
-### [FleetPulse](https://github.com/mo74x/Fleetpulse)
-Last-mile logistics with a double-entry settlement engine.
+<pre align="center">
+Inbound Webhooks ──► [ Fast-Ack / HMAC / Dedup ] ──► [ BullMQ / Kafka ] ──► [ Double-Entry ACID Ledger ] ──► [ Outbox / ERP Sync ]
+</pre>
 
-- ACID-compliant ledger in PostgreSQL, using pessimistic write locks (`SELECT FOR UPDATE`) across courier, merchant, and platform accounts.
-- Geo-spatial dispatch on Redis GeoSets with Redlock, so one order is never assigned twice.
-- Ingestion and settlement split into BullMQ and RabbitMQ workers with exponential backoff.
+---
 
-`NestJS` `PostgreSQL` `MongoDB` `Redis` `RabbitMQ` `Elasticsearch`
+### 🏗️ Featured Systems & Architecture
 
-### Hawala
-Remittance and ledger backend built around idempotent settlement.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ <a href="https://github.com/mo74x/matchbook">Matchbook</a></h3>
+      <p><b>Real-Time Event-Sourced Order Matching Engine</b></p>
+      <p>
+        <img src="https://img.shields.io/badge/Throughput-18,700%2B_ops%2Fsec-10B981?style=flat-square" alt="Throughput" />
+        <img src="https://img.shields.io/badge/Pattern-Event_Sourcing-3B82F6?style=flat-square" alt="Event Sourcing" />
+      </p>
+      <ul>
+        <li><b>Deterministic FIFO Engine:</b> Synchronous Price-Time Priority matching supporting <code>LIMIT</code>, <code>MARKET</code>, <code>IOC</code>, and <code>FOK</code> orders with sub-millisecond execution and L2 depth aggregation.</li>
+        <li><b>Zero-Loss Crash Recovery:</b> Append-only PostgreSQL 15 event log (<code>OrderEvent</code>) paired with automated <code>OrderBookSnapshot</code> state checkpoints.</li>
+        <li><b>Fault Isolation:</b> Per-instrument queues with automated circuit breakers and Prometheus/Grafana SLA telemetry.</li>
+      </ul>
+      <p><code>TypeScript</code> <code>Node.js</code> <code>PostgreSQL</code> <code>Prometheus</code> <code>Grafana</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🚚 <a href="https://github.com/mo74x/Fleetpulse">FleetPulse</a></h3>
+      <p><b>Last-Mile Logistics & Double-Entry Settlement Engine</b></p>
+      <p>
+        <img src="https://img.shields.io/badge/Ledger-ACID_Double--Entry-10B981?style=flat-square" alt="Ledger" />
+        <img src="https://img.shields.io/badge/Locking-Redlock_%2B_Pessimistic-F59E0B?style=flat-square" alt="Locking" />
+      </p>
+      <ul>
+        <li><b>Financial Settlement Engine:</b> ACID-compliant double-entry ledger in PostgreSQL using pessimistic write locks (<code>SELECT FOR UPDATE</code>) across courier, merchant, and platform accounts.</li>
+        <li><b>Concurrency-Safe Dispatch:</b> Geo-spatial matching via <b>Redis GeoSets</b> (<code>GEOSEARCH</code>) and distributed <b>Redlock</b> to eliminate double-assignment race conditions.</li>
+        <li><b>Resilient Pipelines:</b> Decoupled ingestion and settlement workers via <b>BullMQ</b> and <b>RabbitMQ</b> with exponential backoff.</li>
+      </ul>
+      <p><code>NestJS</code> <code>PostgreSQL</code> <code>MongoDB</code> <code>Redis</code> <code>RabbitMQ</code> <code>Elasticsearch</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>💸 Hawala</h3>
+      <p><b>Distributed FinTech Remittance & Ledger Backend</b></p>
+      <p>
+        <img src="https://img.shields.io/badge/Architecture-Idempotent_Settlement-8B5CF6?style=flat-square" alt="Idempotent" />
+        <img src="https://img.shields.io/badge/Queue-BullMQ_Workers-EF4444?style=flat-square" alt="BullMQ" />
+      </p>
+      <ul>
+        <li><b>Transaction Integrity:</b> Enforces strict idempotency keys and atomic state transitions to prevent double-spending across distributed settlement nodes.</li>
+        <li><b>Async Reconciliation:</b> Background settlement pipelines backed by <b>Redis</b> and <b>BullMQ</b> with Dead-Letter Queue (DLQ) isolation for failed transfers.</li>
+      </ul>
+      <p><code>NestJS</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>Redis</code> <code>BullMQ</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🌐 <a href="https://github.com/mo74x/Nexora">Nexora</a></h3>
+      <p><b>Multi-Tenant Event Ingestion & Throttling Platform</b></p>
+      <p>
+        <img src="https://img.shields.io/badge/RPC-gRPC_%2B_Kafka-3B82F6?style=flat-square" alt="gRPC Kafka" />
+        <img src="https://img.shields.io/badge/Rate_Limit-Redis_Lua_Script-10B981?style=flat-square" alt="Rate Limit" />
+      </p>
+      <ul>
+        <li><b>Hybrid Transport:</b> Low-latency internal service communication via <b>gRPC</b> combined with high-throughput <b>Apache Kafka</b> event streaming.</li>
+        <li><b>Noisy-Neighbor Protection:</b> Atomic per-tenant <b>Redis Lua token-bucket</b> rate limiter ensuring strict fairness under burst traffic.</li>
+      </ul>
+      <p><code>Node.js</code> <code>TypeScript</code> <code>gRPC</code> <code>Kafka</code> <code>Redis</code> <code>Docker</code></p>
+    </td>
+  </tr>
+</table>
 
-- Idempotency keys and atomic state transitions prevent double-spending across settlement nodes.
-- Background reconciliation on Redis and BullMQ, with a dead-letter queue isolating failed transfers.
+---
 
-`NestJS` `TypeScript` `PostgreSQL` `Redis` `BullMQ`
+### 📦 Open-Source & Published Packages
 
-### [Matchbook](https://github.com/mo74x/matchbook)
-Event-sourced order matching engine, 18,700+ ops/sec.
+| Package | Description | Registry |
+| :--- | :--- | :--- |
+| **[agentic-json-repair](https://www.npmjs.com/package/agentic-json-repair)** | Zero-dependency TypeScript utility for deterministic repair of malformed, truncated, or unescaped JSON payloads emitted by LLMs and external webhooks. | [![npm](https://img.shields.io/npm/v/agentic-json-repair?style=flat-square&color=CB3837)](https://www.npmjs.com/package/agentic-json-repair) |
 
-- Deterministic price-time priority matching for `LIMIT`, `MARKET`, `IOC`, and `FOK` orders, with sub-millisecond execution and L2 depth aggregation.
-- Append-only PostgreSQL event log with automated snapshots, so state recovers after a crash without losing an event.
-- Per-instrument queues, circuit breakers, and Prometheus and Grafana for SLA metrics.
+---
 
-`TypeScript` `Node.js` `PostgreSQL` `Prometheus` `Grafana`
+### 🛠️ Technology & Architecture Stack
 
-### [Nexora](https://github.com/mo74x/Nexora)
-Multi-tenant event ingestion and throttling platform.
-
-- gRPC for low-latency service calls, Apache Kafka for high-throughput event streaming.
-- Atomic per-tenant token-bucket rate limiter in a Redis Lua script, so one noisy tenant cannot starve the rest.
-
-`Node.js` `TypeScript` `gRPC` `Kafka` `Redis` `Docker`
-
-## Open source
-
-[**agentic-json-repair**](https://www.npmjs.com/package/agentic-json-repair): a zero-dependency TypeScript utility that repairs malformed, truncated, or unescaped JSON from LLMs and external webhooks.
-
-## Stack
-
-| Area | Tools |
+| Layer | Technologies |
 | :--- | :--- |
-| Runtime and APIs | Node.js, NestJS, TypeScript, Express, Python, gRPC, GraphQL |
-| Data | PostgreSQL, MongoDB, Redis (Lua, Redlock, GeoSets), Elasticsearch, Prisma, TypeORM |
-| Messaging | Kafka, RabbitMQ, BullMQ, transactional outbox, dead-letter queues |
-| Infrastructure | AWS, Docker, Kubernetes, GitHub Actions, Prometheus, Grafana |
+| **Runtime & Frameworks** | `Node.js` · `NestJS` · `TypeScript` · `Express.js` · `Python` · `gRPC` · `GraphQL` |
+| **Databases & Ledgers** | `PostgreSQL` · `MongoDB` · `Redis (Lua / Redlock / Geo)` · `Elasticsearch` · `Prisma` · `TypeORM` |
+| **Messaging & Queues** | `Apache Kafka` · `RabbitMQ` · `BullMQ` · `Transactional Outbox` · `Dead-Letter Queues (DLQ)` |
+| **Cloud & Observability** | `AWS` · `Docker` · `Kubernetes` · `GitHub Actions CI/CD` · `Prometheus` · `Grafana` |
 
-## How I work
+<br/>
 
-- Record events first. Append-only logs keep state auditable and replayable.
-- Isolate tenants at every layer: routing, rate limits, and data.
-- Measure latency in percentiles (p50, p95, p99) and trace requests with correlation IDs.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,nestjs,ts,postgres,mongodb,redis,kafka,rabbitmq,graphql,aws,docker,kubernetes,prometheus,grafana,githubactions&perline=15" alt="Tech Stack Icons" />
+</p>
 
-## Get in touch
+---
 
-Open to backend and integration roles. The best way to reach me is [LinkedIn](https://www.linkedin.com/in/mohamed-arafa-6628211b8/) or [email](mailto:mohamed3rafa01@gmail.com).
+### 🛡️ Engineering Philosophy & System Design Values
+
+* **Deterministic & Event-Sourced Architecture:** Decoupling execution logic from I/O boundaries, using append-only event logs for auditability, replayability, and deterministic state recovery.
+* **Zero-Trust Multi-Tenancy:** Ensuring absolute tenant data isolation at the routing, service, rate-limiting, and database levels.
+* **Observability & Metric-Driven Engineering:** Treating latency percentiles (p50, p95, p99), metric exposition (Prometheus/Grafana), and log correlation (`x-request-id`) as first-class citizens.
+
+---
+
+### 📈 GitHub Telemetry
+
+<div align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=mo74x&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=10B981&icon_color=10B981&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mo74x&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=10B981" alt="Top Languages" />
+</div>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mo74x&theme=tokyonight&hide_border=true&background=0D1117&ring=10B981&fire=10B981&currStreakLabel=10B981" alt="GitHub Streak" />
+</p>
+
+---
+
+<div align="center">
+  <sub>Built with architectural rigor · Always open to discussing distributed systems, fintech infrastructure, and backend engineering on <a href="https://www.linkedin.com/in/mohamed-arafa-6628211b8/"><b>LinkedIn</b></a>.</sub>
+</div>
