@@ -1,59 +1,69 @@
-# Mohamed Arafa
+<div align="center">
 
-### Backend engineer. I care about what happens when things go wrong.
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0%3A0D1117%2C50%3A7C3AED%2C100%3A06B6D4&amp;height=210&amp;section=header&amp;text=MOHAMED+ARAFA&amp;fontSize=44&amp;fontColor=FFFFFF&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=BACKEND+ENGINEER+%2F+DISTRIBUTED+SYSTEMS&amp;descAlignY=60&amp;descSize=15" alt="Mohamed Arafa | Backend Engineer and Distributed Systems" width="854" />
 
-A webhook arrives twice. A worker dies halfway through. An AI agent wants to send something it shouldn't.
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&amp;weight=600&amp;size=20&amp;pause=1200&amp;color=22D3EE&amp;center=true&amp;vCenter=true&amp;width=600&amp;lines=TypeScript.+Node.js.+NestJS.%3BPayments.+Queues.+Distributed+systems.%3BBuilding+with+AI.+Keeping+humans+in+control." alt="TypeScript, Node.js, NestJS. Payments, queues, distributed systems." width="600" />
 
-That's the kind of backend work I like: figuring out what can break, then making the failure boring.
+**I build the backend. The queues, the ledgers, the parts you really don't want breaking.**
 
-I work mostly with **TypeScript, Node.js, and NestJS**, backed by PostgreSQL, Redis, and queues.
+[LinkedIn](https://www.linkedin.com/in/mohamed-arafa-6628211b8/) &nbsp; / &nbsp; [Email](mailto:mohamed3rafa01@gmail.com) &nbsp; / &nbsp; [My code](https://github.com/mo74x?tab=repositories)
 
-[LinkedIn](https://www.linkedin.com/in/mohamed-arafa-6628211b8/) · [Email](mailto:mohamed3rafa01@gmail.com)
+</div>
 
-## Things I've built
+## ⚡ The stack
 
-### [Vetoq](https://github.com/mo74x/Vetoq)
-**An AI agent can ask. A human gets the final say.**
+<div align="center">
 
-An approval layer between agents and actions like refunds, emails, and database writes. Policies decide what needs review. People can edit or reject the action before it runs.
+<img src="https://skillicons.dev/icons?i=ts%2Cnodejs%2Cnestjs%2Cpostgres%2Credis%2Cprisma%2Crabbitmq%2Ckafka%2Cdocker%2Caws%2Cmongodb%2Cgit&amp;perline=6&amp;theme=dark" alt="TypeScript, Node.js, NestJS, PostgreSQL, Redis, Prisma, RabbitMQ, Kafka, Docker, AWS, MongoDB, Git" width="400" />
 
-The interesting part: an email scanner opening an approval link must never approve anything. Vetoq separates viewing from deciding, checks for replay, and sends signed callbacks.
+</div>
 
-`NestJS` · `Next.js` · `PostgreSQL` · `Redis` · `BullMQ`
+## 01 / Built, not bookmarked
 
-### [Matchbook](https://github.com/mo74x/matchbook)
-**Same orders. Same sequence. Same result.**
+### 🛡️ [Vetoq](https://github.com/mo74x/Vetoq) · AI agents, with a brake pedal
+> A human approval layer for agent actions. Review, edit, approve or reject before the workflow continues.
 
-An order matching engine with price-time priority and an append-only event history. If the process stops, it can rebuild its state by replaying events.
+**Under the hood:** policy routing, replay protection, signed callbacks and an audit trail.
 
-I keep storage and network calls outside the matching loop. The matching logic has one job: decide what trades.
+### ⚙️ [Matchbook](https://github.com/mo74x/matchbook) · Order in. Trade out.
+> A price-time matching engine with an append-only event history. Restart it. Replay the events. Rebuild the state.
 
-`TypeScript` · `NestJS` · `PostgreSQL` · `WebSockets`
+**Under the hood:** deterministic matching, PostgreSQL event storage and live WebSocket updates.
 
-### [Invoice Chaser](https://github.com/mo74x/invoice-chaser)
-**Check that the invoice is still unpaid before chasing it.**
+### [Invoice Chaser](https://github.com/mo74x/invoice-chaser) · Chase invoices, not paid customers
+> Stripe-connected reminders with AI-assisted drafts. Checks payment status and send rules before dispatch.
 
-A Stripe-connected reminder system with scheduled jobs and AI-assisted drafts. Before dispatch, it checks payment status, duplicates, send windows, and the generated text.
+**Under the hood:** BullMQ jobs, duplicate-event checks, approval controls and failed-job recovery.
 
-Writing the email is only one step. Knowing when not to send it is the part I care about.
+### 📦 [FleetPulse](https://github.com/mo74x/Fleetpulse) · Dispatch to settlement
+> A delivery backend for orders, courier assignment, live tracking and cash-on-delivery accounting.
 
-`NestJS` · `Prisma` · `PostgreSQL` · `BullMQ` · `Stripe` · `Claude`
+**Under the hood:** Redis dispatch locks, RabbitMQ events and transactional double-entry settlement.
 
-### [FleetPulse](https://github.com/mo74x/Fleetpulse)
-**From assigning a courier to accounting for the cash.**
+## 02 / Open source
 
-A delivery backend covering orders, dispatch, live tracking, and cash-on-delivery settlement.
+**[NestJS](https://github.com/nestjs/nest) / [Nest CLI](https://github.com/nestjs/nest-cli)**: contributions around microservice shutdown handling and compiler behavior.
 
-Two dispatchers shouldn't get the same courier. A settlement shouldn't leave half the accounts updated. Redis locks and PostgreSQL transactions handle those boundaries.
+**[agentic-json-repair](https://github.com/mo74x/agentic-json-repair)**: repairing malformed JSON from LLMs and webhook streams.
 
-`NestJS` · `PostgreSQL` · `Redis` · `RabbitMQ` · `MongoDB`
+## 03 / The commit trail
 
-## Beyond my own repos
+<div align="center">
 
-I contribute to **[NestJS](https://github.com/nestjs/nest)** and **[Nest CLI](https://github.com/nestjs/nest-cli)**, including microservice shutdown handling and compiler behavior. I like digging into the tools I use.
+<img src="https://github-readme-stats.vercel.app/api?username=mo74x&amp;show_icons=true&amp;hide_border=true&amp;theme=tokyonight&amp;hide_rank=true" alt="GitHub public activity statistics for mo74x" width="420" />
+<br />
+<img src="https://streak-stats.demolab.com/?user=mo74x&amp;theme=tokyonight&amp;hide_border=true" alt="GitHub contribution streak for mo74x" width="495" />
+<br />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mo74x&amp;theme=tokyonight" alt="Most common languages by repository for mo74x" width="420" />
 
-I also build **[agentic-json-repair](https://github.com/mo74x/agentic-json-repair)** for malformed JSON from LLMs and webhook streams. Sometimes the missing bracket really is the problem.
+<sub>Public GitHub data via third-party widgets. Counts may be cached and use different scopes.</sub>
+
+</div>
 
 ---
 
-**My default:** assume retries will happen, keep money changes transactional, and leave enough evidence to debug the failure.
+<div align="center">
+
+**TypeScript at the edge. Transactions at the core. A queue somewhere in between.**
+
+</div>
